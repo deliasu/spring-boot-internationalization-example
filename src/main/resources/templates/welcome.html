@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Internationalization example - Spring Boot</title>
+</head>
+<body>
+<h4 th:text="#{welcome.message}"></h4>
+<h5 th:text="#{language.link}"></h5>
+
+<span th:text="#{language.lang}"></span> :
+
+<a th:href="@{/welcome(language='en_US')}" th:text="#{language.en}"></a>
+<a th:href="@{/welcome(language='fr_FR')}" th:text="#{language.fr}"></a>
+</body>
+</html>
